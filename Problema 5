@@ -1,16 +1,16 @@
 inferior = superior = medio = 0
-altura = float(input('Digite sua altura: '))
 
-while altura > 0:
+for i in range(10):
+    altura = float(input('Digite sua altura: '))
+
     if altura < 1.6:
         inferior += 1
     elif altura > 1.8:
         superior += 1
     else:
         medio += 1
-    altura= float(input('Digite sua altura: '))
-
-total= inferior + superior + medio
+    
+total = inferior + superior + medio
 
 print('-*-' * 15)
 print('Pessoas com altura menor que 1.60 ------> {}' .format(inferior))
